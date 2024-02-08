@@ -97,13 +97,10 @@
 			</div>
 
 
-            <div class="container-xxl py-60 overflow-hidden overflow-xxl-visible">
-                <!-- <div class="mt-4 mt-md-0 d-grid gap-12 w-md-75 w-lg-100">
-                    <div class="heading-text-1 text-primary">How it works</div>
-                    <h2 class="heading-section-1 text-dark mb-0">Start find a job you love with us easily</h2>
-                </div> -->
+            <div class="container-xxl py-60  pt-0 overflow-hidden overflow-xxl-visible" style="padding-top:0 !important;">
+                
                 <div class="navwrapper">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs border-0 " id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
                         </li>
@@ -112,7 +109,7 @@
                         </li>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-12 col-lg-6 col-xxl-5 order-2 order-lg-1">
                                         <div class="mt-4 mt-md-0 d-grid gap-12 w-md-75 w-lg-100">
                                             <div class="heading-text-1 text-primary">How it works</div>
@@ -423,8 +420,8 @@
 			
 			</div>
 
-            <div class="container-xxl py-60">
-				<div class="counter">   
+            <div class="container-xxl py-60 pt-0">
+				<div class="counter my-0 my-md-5">   
 					<div class="count-item">
 						<div class="count-number" data-count="36588">36.8k</div>
 						<div class="count-title">Talented Freelancer</div>
@@ -457,7 +454,7 @@
 				</div>
 				<!-- /.counter-component -->
 			</div>
-            <div class="container-xxl">
+            <div class="container-xxl pb-4">
                 <div class="d-grid gap-12 w-md-50 w-xl-34 mb-60 mx-auto">
 					<h2 class="heading-section-3 text-dark text-center mb-0">Browse Categories</h2>
 					<div class="heading-text-2 lh-base text-dark text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -540,30 +537,30 @@
             </div>
 
             
-            <div class="top-footer">
-                <div class="row py-25 py-lg-43 py-xl-80 align-items-md-center ">
-                    <div class="col-12 col-md-6">
-                        <h2 class="heading-section-2 text-white mb-4 mb-md-0">Don't miss our weekly updates about freelancer career</h2>
-                        <!-- /.newsletter-heading -->
-                    </div>
-                    <!-- /.col -->
-
-                    <div class="col-12 col-md-6 col-lg-5 offset-lg-1 mt-25 mt-md-0">
-                        <form class="ms-auto" action="#">
-                            <div class="form-btn-inner form-newsletter rounded-pill">
-                                <input class="form-control" type="email" placeholder="Enter your email address...">
-                                <button class="btn btn-accent text-white text-uppercase fw-semiBold py-12 px-20 px-lg-34 shadow-none" type="submit">Subscribe</button>
-                            </div>
-                        </form>
-                        <!-- /.newsletter-form -->
-                    </div>
-                    <!-- /.col -->
-                </div>
-            </div>
+           
 
             <footer class="footer bg_black">
                 <div class="container-xxl">
-                   
+                    <div class="top-footer">
+                        <div class="row py-25 py-lg-43 py-xl-80 align-items-md-center ">
+                            <div class="col-12 col-md-6">
+                                <h2 class="heading-section-2 text-white mb-4 mb-md-0">Don't miss our weekly updates about freelancer career</h2>
+                                <!-- /.newsletter-heading -->
+                            </div>
+                            <!-- /.col -->
+        
+                            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 mt-25 mt-md-0">
+                                <form class="ms-auto" action="#">
+                                    <div class="form-btn-inner form-newsletter rounded-pill">
+                                        <input class="form-control" type="email" placeholder="Enter your email address...">
+                                        <button class="btn btn-accent text-white text-uppercase fw-semiBold py-12 px-20 px-lg-34 shadow-none" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                                <!-- /.newsletter-form -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </div>
                     <!-- /.row -->
     
                     <div class="row py-20 py-xl-80">
@@ -732,7 +729,7 @@ const swiperTestmonials = new Swiper('.client-logo-slider', {
 					grabCursor: true,
                     margin:50,
                     autoplay: {
-        delay: 2000, // Delay between slides in milliseconds (5 seconds in this example)
+                    delay: 1500, // Delay between slides in milliseconds (5 seconds in this example)
     },
 					navigation: {
 							nextEl: '.swiper-button-testmonials-next',
@@ -740,7 +737,7 @@ const swiperTestmonials = new Swiper('.client-logo-slider', {
 					},
 					breakpoints: {
 							// when window width is >= 640px
-							500: {
+							330: {
 									slidesPerView: 2,
 							},
 							780: {
@@ -763,7 +760,7 @@ const swiperTestmonials = new Swiper('.client-logo-slider', {
 
 const swiperTestmonials2 = new Swiper('.featured_jobs', {
     loop: true,
-    // slidesPerView: 4,
+    slidesPerView: 1,
     grabCursor: true,
     margin: 50,
     autoplay: {
@@ -777,6 +774,8 @@ const swiperTestmonials2 = new Swiper('.featured_jobs', {
         // when window width is >= 500px
         500: {
             slidesPerView: 1,
+            margin: 20,
+
         },
         // when window width is >= 780px
         780: {
