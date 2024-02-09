@@ -642,7 +642,55 @@ z-index: 55;
   cursor: pointer;
 }
 
+.counter figure {
+  margin: 0;
+}
 
+.counter figure .figure-1 {
+  width: 286px;
+  height: 286px;
+  top: -10rem;
+  left: -10rem;
+  opacity: 0.33;
+}
+
+.counter figure .figure-2 {
+  width: 60px;
+  height: 60px;
+  top: 3.7rem;
+  left: 6.5rem;
+  color: rgba(107,88,224);
+}
+
+.counter figure .figure-3 {
+  width: 300px;
+  height: 300px;
+  top: 14rem;
+  left: 10rem;
+  color:rgb(82,65,187);
+}
+
+.counter figure .figure-4 {
+  width: 40px;
+  height: 40px;
+  top: 14rem;
+  left: 25rem;
+}
+.counter figure .figure-5 {
+  width: 265px;
+  height: 265px;
+  top: -9rem;
+  right: 1rem;
+  color: rgb(107,88,224);
+}
+
+.counter figure .figure-6 {
+  width: 77px;
+  height: 77px;
+  bottom: 2.5rem;
+  right: 1rem;
+  opacity: 0.17;
+}
 
 @media (min-width: 768px){
 .w-md-50 {
