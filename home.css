@@ -574,21 +574,76 @@ padding: 6px 20px;
 z-index: 55;
 }
 
-/* 
-.footer.bg_black::before {
-  content: "";
-  display: block;
+
+.searchInput{
+  background: #fff;
   width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  margin-top: 20px;
+}
+
+.searchInput input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.searchInput.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.searchInput .resultBox{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.searchInput.active .resultBox{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.resultBox li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.searchInput.active .resultBox li{
+  display: block;
+}
+.resultBox li:hover{
+  background: #efefef;
+}
+
+.searchInput .icon{
   position: absolute;
-  height: 100%;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  top: -110px;
-  background: url('./images/Vector.png');
-  background-size: cover;
-} */
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+
+
 @media (min-width: 768px){
 .w-md-50 {
     width: 50%;
@@ -674,6 +729,9 @@ body.page__homepage .main .how-it-work-figure-3 {
   right: calc(100% - 3rem);
   width: 5rem;
 }
+
+
+
 .w-xl-34 {
   width: 34%;
 }
@@ -778,7 +836,12 @@ body.page__homepage .main .how-it-work-figure-3 {
   padding-bottom: 0;
 }
 footer.footer.bg_black{
-  padding-top: 40px;
+  padding-top: 0;
+  background-color: #000;
+  background-image: none;
+}
+.footer-brand{
+  margin-top: 15px;
 }
 
 }
